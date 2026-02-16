@@ -70,7 +70,10 @@ h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
     text-decoration: none;
     border-radius: 2rem;
     font-size: 0.875rem;
+    transition: opacity 0.2s;
 }
+
+.social-links a:hover { opacity: 0.8; }
 
 section {
     padding: 3rem 0;
@@ -92,6 +95,12 @@ section h2 {
     border: 1px solid rgba(128,128,128,0.2);
     border-radius: 1rem;
     padding: 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .project-card h3 { margin-bottom: 0.5rem; }
@@ -167,28 +176,36 @@ footer {
 </head>
 <body>
     <div class="container">
-        <header>
-    
-    <h1>Vincent Ooi</h1>
-    <p class="tagline">Developer</p>
-    <p class="bio">I love to make iOS apps</p>
-    <div class="social-links">
-        
-    </div>
-</header>
+                <header>
+            <img src="https://concaire-rgb.github.io/images/avatar.jpg" alt="Vincent Ooi" class="avatar">
+            <h1>Vincent Ooi</h1>
+            <p class="tagline">Developer</p>
+            <p class="bio">&quot;I’m passionate about crafting innovative iOS apps that enhance everyday experiences.&quot;</p>
+            <div class="social-links">
+                <a href="vooiphotography" target="_blank" rel="noopener">Instagram</a>
+            </div>
+        </header>
         <main>
-            <section>
-    <h2>About Me</h2>
-    <p></p>
-</section>
-<section>
-    <h2>Projects</h2>
-    <div class="projects-grid"></div>
-</section>
-<section>
-    <h2>Gallery</h2>
-    <div class="gallery-grid"></div>
-</section>
+                    <section>
+            <h2>About Me</h2>
+            <p></p>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                    <div class="project-card" onclick="window.open('PassQR.com')" style="cursor:pointer">
+    <h3>PassQR</h3>
+    <p>PassQR is an innovative personal project that streamlines the process of securely sharing and managing passwords through the convenience of QR codes. By combining cutting-edge encryption techniques with user-friendly design, PassQR makes it easy to generate, store, and access passwords on-the-go, ensuring that your digital life remains both secure and hassle-free. This project not only highlights the importance of cybersecurity but also showcases the potential for simple yet powerful solutions in everyday tech challenges.</p>
+    <div class="tags"></div>
+</div>
+                </div>
+        </section>
+        <section>
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                    
+                </div>
+        </section>
         </main>
         <footer>
             <p>Built with Personal Page Builder</p>
