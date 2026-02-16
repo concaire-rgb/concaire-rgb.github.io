@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vincent Ooi - Personal Page</title>
-    <meta name="description" content="Developer">
+    <meta name="description" content="Vincent Ooi: Bridging Ideas and Innovation">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <style>
@@ -131,11 +131,21 @@ section h2 {
     gap: 0.5rem;
 }
 
+.gallery-item {
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
 .gallery-item img {
     width: 100%;
-    aspect-ratio: 1;
+    height: 100%;
     object-fit: cover;
-    border-radius: 0.5rem;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
 }
 
 .updates-list { display: flex; flex-direction: column; gap: 2rem; }
@@ -179,8 +189,8 @@ footer {
                 <header>
             <img src="https://concaire-rgb.github.io/images/avatar.jpg" alt="Vincent Ooi" class="avatar">
             <h1>Vincent Ooi</h1>
-            <p class="tagline">Developer</p>
-            <p class="bio">&quot;I’m passionate about crafting innovative iOS apps that enhance everyday experiences.&quot;</p>
+            <p class="tagline">Vincent Ooi: Bridging Ideas and Innovation</p>
+            <p class="bio">Hey there! I’m Vincent Ooi, a passionate explorer of life’s little wonders, from delicious food to captivating stories. When I’m not diving into my latest adventure, you can find me sharing my thoughts and experiences with a cozy cup of coffee in hand. Join me on this journey, and let’s discover the beauty in everyday moments together!</p>
             <div class="social-links">
                 <a href="vooiphotography" target="_blank" rel="noopener">Instagram</a>
             </div>
@@ -203,14 +213,16 @@ footer {
         <section>
             <h2>Gallery</h2>
             <div class="gallery-grid">
-                    <div class="gallery-item"><img src="/var/mobile/Containers/Data/Application/5BECE6C8-6E7B-4911-94B0-BDF780EA3724/Documents/images/E89E0E39-0F2A-4435-80D0-3BB621A9C0E1.jpg" alt="" loading="lazy"></div>
-                    <div class="gallery-item"><img src="/var/mobile/Containers/Data/Application/5BECE6C8-6E7B-4911-94B0-BDF780EA3724/Documents/images/3CE2D41B-65B7-4C18-8BA9-C8E81263AAF5.jpg" alt="" loading="lazy"></div>
-                    <div class="gallery-item"><img src="/var/mobile/Containers/Data/Application/5BECE6C8-6E7B-4911-94B0-BDF780EA3724/Documents/images/62A533C8-B740-4143-8B66-3102AB61DDFF.jpg" alt="" loading="lazy"></div>
-                    <div class="gallery-item"><img src="/var/mobile/Containers/Data/Application/5BECE6C8-6E7B-4911-94B0-BDF780EA3724/Documents/images/5E908D51-2804-40DC-BE20-E9EFAFBD2907.jpg" alt="" loading="lazy"></div>
-                    <div class="gallery-item"><img src="/var/mobile/Containers/Data/Application/5BECE6C8-6E7B-4911-94B0-BDF780EA3724/Documents/images/5294E2AF-FE86-4767-999D-65206DA51C29.jpg" alt="" loading="lazy"></div>
-                    <div class="gallery-item"><img src="/var/mobile/Containers/Data/Application/5BECE6C8-6E7B-4911-94B0-BDF780EA3724/Documents/images/A1F19CA4-B3CE-46CE-AF80-E72E57AD58A3.jpg" alt="" loading="lazy"></div>
-                    <div class="gallery-item"><img src="/var/mobile/Containers/Data/Application/5BECE6C8-6E7B-4911-94B0-BDF780EA3724/Documents/images/A6023F91-926E-42B2-BA79-8B8035E71AB4.jpg" alt="" loading="lazy"></div>
-                    <div class="gallery-item"><img src="/var/mobile/Containers/Data/Application/5BECE6C8-6E7B-4911-94B0-BDF780EA3724/Documents/images/1C9C34E0-873E-4CDD-92A7-8CC7ECF49E0C.jpg" alt="" loading="lazy"></div>
+                    <div class="gallery-item"><img src="https://concaire-rgb.github.io/images/gallery/AA1D86B8-2CE6-4FD6-AEB8-53F0CF157AE3.jpg" alt="" loading="lazy"></div>
+                    <div class="gallery-item"><img src="https://concaire-rgb.github.io/images/gallery/955847D5-CBEF-406E-A763-01138EE6C56D.jpg" alt="" loading="lazy"></div>
+                    <div class="gallery-item"><img src="https://concaire-rgb.github.io/images/gallery/F2EE2A5A-5BEE-47C2-B8C1-B0BC7D97A199.jpg" alt="" loading="lazy"></div>
+                    <div class="gallery-item"><img src="https://concaire-rgb.github.io/images/gallery/56DB0DC3-8733-4B1D-8A76-190FE280AA0B.jpg" alt="" loading="lazy"></div>
+                    <div class="gallery-item"><img src="https://concaire-rgb.github.io/images/gallery/D918BF5A-0928-4508-87FA-EAB35E448A60.jpg" alt="" loading="lazy"></div>
+                    <div class="gallery-item"><img src="https://concaire-rgb.github.io/images/gallery/C96A3051-0BA1-49CB-B2A7-57E1E9BD92F7.jpg" alt="" loading="lazy"></div>
+                    <div class="gallery-item"><img src="https://concaire-rgb.github.io/images/gallery/BA9F5CE8-0D1A-4AFB-A2ED-BBC281122C96.jpg" alt="" loading="lazy"></div>
+                    <div class="gallery-item"><img src="https://concaire-rgb.github.io/images/gallery/BF4F6E5C-6E3F-4BFF-93E4-66BAEC243F71.jpg" alt="" loading="lazy"></div>
+                    <div class="gallery-item"><img src="https://concaire-rgb.github.io/images/gallery/C892323E-1701-4AC7-9EB3-9B75CD127DAC.jpg" alt="" loading="lazy"></div>
+                    <div class="gallery-item"><img src="https://concaire-rgb.github.io/images/gallery/B53E59BF-0818-4D5D-9811-1AE78639BF59.jpg" alt="" loading="lazy"></div>
                 </div>
         </section>
         </main>
