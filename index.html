@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincent Ooi - Personal Page</title>
+    <meta name="description" content="Developer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <style>
+        :root {
+    --primary: #007AFF;
+    --bg: #FFFFFF;
+    --text: #1C1C1E;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+header {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    border: 3px solid var(--primary);
+}
+
+h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+
+.tagline {
+    font-size: 1.25rem;
+    opacity: 0.7;
+    margin-bottom: 1rem;
+}
+
+.bio {
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    padding: 0.5rem 1rem;
+    background: var(--primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+}
+
+section {
+    padding: 3rem 0;
+    border-top: 1px solid rgba(128,128,128,0.2);
+}
+
+section h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    border: 1px solid rgba(128,128,128,0.2);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.project-card h3 { margin-bottom: 0.5rem; }
+
+.project-card p {
+    opacity: 0.7;
+    font-size: 0.875rem;
+}
+
+.tags {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.tag {
+    padding: 0.25rem 0.75rem;
+    background: var(--primary);
+    opacity: 0.2;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 0.5rem;
+}
+
+.gallery-item img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.updates-list { display: flex; flex-direction: column; gap: 2rem; }
+
+.update-date {
+    font-size: 0.875rem;
+    opacity: 0.6;
+    margin-bottom: 0.5rem;
+}
+
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.hobby-card {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(128,128,128,0.1);
+    border-radius: 1rem;
+}
+
+.hobby-emoji { font-size: 2.5rem; margin-bottom: 0.5rem; }
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    opacity: 0.5;
+    font-size: 0.875rem;
+}
+
+@media (max-width: 640px) {
+    h1 { font-size: 2rem; }
+    section { padding: 2rem 0; }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+    
+    <h1>Vincent Ooi</h1>
+    <p class="tagline">Developer</p>
+    <p class="bio">I love to make iOS apps</p>
+    <div class="social-links">
+        
+    </div>
+</header>
+        <main>
+            <section>
+    <h2>About Me</h2>
+    <p></p>
+</section>
+<section>
+    <h2>Projects</h2>
+    <div class="projects-grid"></div>
+</section>
+<section>
+    <h2>Gallery</h2>
+    <div class="gallery-grid"></div>
+</section>
+        </main>
+        <footer>
+            <p>Built with Personal Page Builder</p>
+        </footer>
+    </div>
+</body>
+</html>
